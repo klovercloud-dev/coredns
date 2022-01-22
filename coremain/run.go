@@ -9,6 +9,7 @@ import (
 	"runtime"
 	"strings"
 
+	"example.com/ipLocationService"
 	"github.com/coredns/caddy"
 	"github.com/coredns/coredns/core/dnsserver"
 )
@@ -29,6 +30,8 @@ func init() {
 
 	caddy.AppName = coreName
 	caddy.AppVersion = CoreVersion
+
+	ipLocationService.InitDb()
 }
 
 // Run is CoreDNS's main() function.
