@@ -4,12 +4,12 @@ package coremain
 import (
 	"flag"
 	"fmt"
+	ipLocationService "github.com/klovercloud-dev/get-ip-region"
 	"log"
 	"os"
 	"runtime"
 	"strings"
 
-	"example.com/ipLocationService"
 	"github.com/coredns/caddy"
 	"github.com/coredns/coredns/core/dnsserver"
 )

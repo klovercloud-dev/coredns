@@ -2,12 +2,7 @@ module github.com/coredns/coredns
 
 go 1.17
 
-replace github.com/klovercloud/redis => ../redis
-
-replace example.com/ipLocationService => ../get-ip-region-service
-
 require (
-	example.com/ipLocationService v0.0.0-00010101000000-000000000000
 	github.com/Azure/azure-sdk-for-go v61.1.0+incompatible
 	github.com/Azure/go-autorest/autorest v0.11.24
 	github.com/Azure/go-autorest/autorest/azure/auth v0.5.11
@@ -19,7 +14,7 @@ require (
 	github.com/golang/protobuf v1.5.2
 	github.com/grpc-ecosystem/grpc-opentracing v0.0.0-20180507213350-8e809c8a8645
 	github.com/infobloxopen/go-trees v0.0.0-20200715205103-96a057b8dfb9
-	github.com/klovercloud/redis v0.0.0-20210421110201-ff699281ccee
+	github.com/klovercloud-dev/get-ip-region v0.0.0-20220128180557-712ffe4513bc
 	github.com/matttproud/golang_protobuf_extensions v1.0.1
 	github.com/miekg/dns v1.1.45
 	github.com/opentracing/opentracing-go v1.2.0
@@ -82,6 +77,7 @@ require (
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
+	github.com/klovercloud-dev/redis v0.0.0-20220128181241-de2a16d7f530 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
